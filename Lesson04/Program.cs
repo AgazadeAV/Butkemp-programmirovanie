@@ -44,7 +44,7 @@ class Program
     {
         Console.WriteLine("Сортировка выбором");
         Console.Write("Введите элементы массива: ");
-        var s = Console.ReadLine().Split(new[] { " ", ",", ";" }, StringSplitOptions.RemoveEmptyEntries);
+        var s = Console.ReadLine()!.Split(new[] { " ", ",", ";" }, StringSplitOptions.RemoveEmptyEntries);
         var a = new int[s.Length];
         for (int i = 0; i < s.Length; i++)
         {
