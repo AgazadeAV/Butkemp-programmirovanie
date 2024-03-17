@@ -1,22 +1,22 @@
 class Worker
 {
   public int id;
-  public string dep_id;
+  public int depId;
   public int age;
-  public string full_name;
+  public string fullName;
   public int salary;
 
-  public Worker(int id, string dep_id, int age, string full_name, int salary)
+  public Worker(int id, int depId, int age, string fullName, int salary)
   {
     this.id = id;
-    this.dep_id = dep_id;
+    this.depId = depId;
     this.age = age;
-    this.full_name = full_name;
+    this.fullName = fullName;
     this.salary = salary;
   }
 
   public override string ToString()
   {
-    return $"id: {self.id}  Full name: {self.full_name}  age: {self.age}  salary: {self.salary}  dep id: {self.dep_id}";
+    return $"id: {this.id}  Full name: {this.fullName}  age: {this.age}  salary: {this.salary}  dep id: {this.depId}";
   }
 }

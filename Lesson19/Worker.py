@@ -1,6 +1,6 @@
 class Worker:
     id: int
-    dep_id: str
+    dep_id: int
     age: int
     full_name: str
     salary: int
